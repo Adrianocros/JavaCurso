@@ -1,6 +1,6 @@
 package Interface.LocacaoDeCarro.Model.Services;
 
-public class BrazilTaxService {
+public class BrazilTaxService implements TaxService {
 
 
     public double tax(double amount){
