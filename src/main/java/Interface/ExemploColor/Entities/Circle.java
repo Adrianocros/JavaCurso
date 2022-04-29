@@ -3,7 +3,7 @@ package Interface.ExemploColor.Entities;
 
 import Interface.ExemploColor.Enums.Color;
 
-public class Circle  extends Shape{
+public class Circle  extends AbstractShape{
 
     private Double radius;
 

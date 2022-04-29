@@ -1,0 +1,32 @@
+package Interface.LerEOrdenar;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Program {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        String path = "c:\\temp\\nome.txt";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path))){
+            String nome = br.readLine();
+            while (nome != null){
+                list.add(nome);
+                nome = br.readLine();
+            }
+            //forma de ordenar a coleção
+            Collections.sort(list);
+            for (String s : list){
+                System.out.println(s);
+            }
+        }catch (IOException e){
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+    }
+}

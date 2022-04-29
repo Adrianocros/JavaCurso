@@ -3,7 +3,7 @@ package Interface.ExemploColor.Entities;
 
 import Interface.ExemploColor.Enums.Color;
 
-public class Retangle extends Shape {
+public class Retangle extends AbstractShape {
     private  Double width;
     private  Double height;
 
@@ -28,8 +28,6 @@ public class Retangle extends Shape {
     public void setHeight(Double height) {
         this.height = height;
     }
-
-
     @Override
     public double area() {
         return width * height;
