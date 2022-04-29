@@ -2,6 +2,7 @@ package Interface.MetodosPadrao.Application;
 
 import Interface.MetodosPadrao.Services.ServicoAmericanoDeJuros;
 import Interface.MetodosPadrao.Services.ServicoBrasileiroDeJuros;
+import Interface.MetodosPadrao.Services.ServicoJuros;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -16,10 +17,10 @@ public class Program {
         System.out.print("Meses: ");
         int meses = scanner.nextInt();
 
-        ServicoBrasileiroDeJuros br = new ServicoBrasileiroDeJuros(2.0);
+        ServicoJuros br = new ServicoBrasileiroDeJuros(2.0);
         double pagamentoBR = br.pagamento(montante, meses);
 
-        ServicoAmericanoDeJuros usa = new ServicoAmericanoDeJuros(1.0);
+        ServicoJuros usa = new ServicoAmericanoDeJuros(1.0);
         double pagamentoUSA = usa.pagamento(montante, meses);
 
         System.out.println("### Juros Brasileiro ####");
