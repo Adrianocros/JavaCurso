@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 public class Program {
     public static void main(String[] args) {
-        Set<String> set = new HashSet<>();
+        Set<String> set = new TreeSet<>();
         set.add("TV");
         set.add("Tablet");
         set.add("Notebook");
