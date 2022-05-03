@@ -1,6 +1,6 @@
-package GenericsSetMap.Generics;
+package GenericsSetMap.GenericsExemploUm;
 
-import GenericsSetMap.Generics.Services.PrintService;
+import GenericsSetMap.GenericsExemploUm.Services.PrintService;
 
 import java.util.Scanner;
 
