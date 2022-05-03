@@ -14,11 +14,11 @@ public class Program {
         int n = scanner.nextInt();
 
         for(int i=0; i< n; i++){
-            int value = scanner.nextInt();
+            Integer value = scanner.nextInt();
             ps.addValue(value);
         }
         ps.print();
-        System.out.println("Primeiro numero digitado:  " + ps.first() );
+        System.out.println("Objeto a ser digitado:  " + ps.first());
 
     }
 }
