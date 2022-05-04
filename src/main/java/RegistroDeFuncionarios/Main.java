@@ -35,6 +35,7 @@ public class Main {
                 System.out.print("Id: ");
                 id = scanner.nextInt();
             }
+
             System.out.print("Nome: ");
             scanner.nextLine();
             String nome = scanner.nextLine();
