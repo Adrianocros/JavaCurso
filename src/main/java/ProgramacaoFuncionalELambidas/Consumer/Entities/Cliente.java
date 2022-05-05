@@ -4,11 +4,14 @@ public class Cliente {
     private String nome;
     private Integer idade;
     private String cidade;
+    private Double salario;
 
-    public Cliente(String nome, Integer idade, String cidade) {
+    public Cliente(String nome, Integer idade, String cidade, Double salario) {
         this.nome = nome;
         this.idade = idade;
         this.cidade = cidade;
+        this.salario = salario;
+
     }
 
     public String getNome() {
@@ -35,11 +38,19 @@ public class Cliente {
         this.cidade = cidade;
     }
 
+    public Double getSalario(){
+        return salario;
+    }
+    public void setSalario(Double salario){
+        this.salario = salario;
+    }
+
     @Override
     public String toString() {
         return "Cliente - "
                 + "nome: " + nome
                 + ", Idade: " + idade
-                + ", cidade: " + cidade;
+                + ", cidade: " + cidade
+                + ", Salario:" + salario;
     }
 }
