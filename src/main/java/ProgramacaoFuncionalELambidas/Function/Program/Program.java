@@ -22,12 +22,6 @@ public class Program {
         List<String> names = clientes.stream().map(c -> c.getNome().toUpperCase()).collect(Collectors.toList());
 
         names.forEach(System.out :: println);
-
-
-
-
-
-
     }
 }
 
