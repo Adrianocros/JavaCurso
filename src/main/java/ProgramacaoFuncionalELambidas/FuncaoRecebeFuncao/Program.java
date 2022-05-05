@@ -17,7 +17,7 @@ public class Program {
 
         ProductService ps = new ProductService();
 
-        double sum = ps.filterSum(products);
+        double sum = ps.filterSum(products, p -> p.getNome().charAt(0) == 'T');
 
         System.out.println("Soma R$ " + String.format("%.2f",sum));
 
