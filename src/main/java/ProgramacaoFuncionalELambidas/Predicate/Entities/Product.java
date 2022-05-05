@@ -30,10 +30,10 @@ public class Product {
 //        return p.getPreco() >= 100.0;
 //    }
 
-    //Metodo não estatico pega o produto e retorna booleam, acess o produto do metodo que esta.
-    public boolean NostaticProductPredicate(){
-        return preco >= 100.0;
-    }
+//    //Metodo não estatico pega o produto e retorna booleam, acess o produto do metodo que esta.
+//    public boolean NostaticProductPredicate(){
+//        return preco >= 100.0;
+//    }
 
 
 

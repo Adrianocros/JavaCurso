@@ -17,8 +17,12 @@ public class Program {
         list.add(new Product("HD", 80.00));
         list.add(new Product("Mouse",50.00));
 
-        //Referencia para metodo
-        list.removeIf(Product :: NostaticProductPredicate);
+        double min = 100.0;
+
+        //Lambida decalrada
+        Predicate<Product> pred = p -> p.getPreco() >= min;
+
+        list.removeIf(pred);
 
         for (Product p : list){
             System.out.println(p);
