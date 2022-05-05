@@ -17,10 +17,9 @@ public class Program {
         clientes.add(new Cliente("Tamara",35));
         clientes.add(new Cliente("Tamires",5));
 
-        Function<Cliente, String> cli = c -> c.getNome().toUpperCase();
 
         //Funcao map aplica uma função a cada elemento da strem gerando uma nova strem com elementos transformados
-        List<String> names = clientes.stream().map(cli).collect(Collectors.toList());
+        List<String> names = clientes.stream().map(c -> c.getNome().toUpperCase()).collect(Collectors.toList());
 
         names.forEach(System.out :: println);
 
