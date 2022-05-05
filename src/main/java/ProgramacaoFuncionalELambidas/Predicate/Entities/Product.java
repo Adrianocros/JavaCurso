@@ -1,12 +1,10 @@
-package ProgramacaoFuncionalELambidas.Comparator.Entities;
+package ProgramacaoFuncionalELambidas.Predicate.Entities;
 
-import java.util.Locale;
-
-public class Products  {
+public class Product {
     private String nome;
     private Double preco;
 
-    public Products(String nome, Double preco) {
+    public Product(String nome, Double preco) {
         this.nome = nome;
         this.preco = preco;
     }
@@ -29,10 +27,9 @@ public class Products  {
 
     @Override
     public String toString() {
-        return "Products{" +
+        return "Product{" +
                 "nome='" + nome + '\'' +
                 ", preco=" + preco +
                 '}';
     }
-
 }
