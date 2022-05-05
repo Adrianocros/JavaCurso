@@ -1,12 +1,12 @@
 package ProgramacaoFuncionalELambidas.Consumer.Entities;
 
-public class Cliente {
+public class Funcionario {
     private String nome;
     private Integer idade;
     private String cidade;
     private Double salario;
 
-    public Cliente(String nome, Integer idade, String cidade, Double salario) {
+    public Funcionario(String nome, Integer idade, String cidade, Double salario) {
         this.nome = nome;
         this.idade = idade;
         this.cidade = cidade;

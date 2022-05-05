@@ -1,25 +1,29 @@
 package ProgramacaoFuncionalELambidas.Consumer;
 
-import ProgramacaoFuncionalELambidas.Consumer.Entities.Cliente;
+import ProgramacaoFuncionalELambidas.Consumer.Entities.Funcionario;
+import ProgramacaoFuncionalELambidas.Consumer.util.SalarioUpdate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
-        List<Cliente> list = new ArrayList<>();
+        Locale.setDefault(Locale.US);
+        List<Funcionario> list = new ArrayList<>();
 
 
-        list.add(new Cliente("Renato", 33, "Guarulhos",3000.00));
-        list.add(new Cliente("Ana", 17, "Guaruja",1500.00));
-        list.add(new Cliente("Leticia", 23, "Santos",1350.00));
-        list.add(new Cliente("João", 31, "São Paulo",2500.00));
+        list.add(new Funcionario("Renato", 33, "Guarulhos",3000.0));
+        list.add(new Funcionario("Ana", 17, "Guaruja",1500.0));
+        list.add(new Funcionario("Leticia", 23, "Santos",1350.0));
+        list.add(new Funcionario("João", 31, "São Paulo",2500.0));
 
 
+        //Ira percorrer a lista e aplicar o update
+        list.forEach(new SalarioUpdate());
 
-        for(Cliente c : list){
-            System.out.println(c);
-        }
+
+        list.forEach(System.out :: println);
 
     }
 }
