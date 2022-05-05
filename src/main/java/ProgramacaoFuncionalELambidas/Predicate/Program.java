@@ -17,7 +17,8 @@ public class Program {
         list.add(new Product("HD", 80.00));
         list.add(new Product("Mouse",50.00));
 
-        list.removeIf(new ProductPredicat());
+        //Referencia para metodo
+        list.removeIf(Product :: staticProductPredicate);
 
         for (Product p : list){
             System.out.println(p);
