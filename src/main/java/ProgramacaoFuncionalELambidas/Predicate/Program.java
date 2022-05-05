@@ -19,10 +19,8 @@ public class Program {
 
         double min = 100.0;
 
-        //Lambida decalrada
-        Predicate<Product> pred = p -> p.getPreco() >= min;
-
-        list.removeIf(pred);
+        //Lambida inline
+        list.removeIf(p -> p.getPreco() >= min);
 
         for (Product p : list){
             System.out.println(p);
