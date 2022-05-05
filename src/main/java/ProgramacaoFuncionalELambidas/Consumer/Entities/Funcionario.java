@@ -45,6 +45,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public static void staticSalarioUpdate(Funcionario f){
+        f.setSalario(f.getSalario() * 1.1);
+    }
+
     @Override
     public String toString() {
         return "Cliente - "
