@@ -21,11 +21,8 @@ public class Program {
 
         double factor = 1.1;
 
-        Consumer<Funcionario> consumer = f -> f.setSalario(f.getSalario() * factor);
-
-
         //Ira percorrer a lista e aplicar o update
-        list.forEach(consumer);
+        list.forEach(f -> f.setSalario(f.getSalario() * factor));
 
 
         list.forEach(System.out :: println);
