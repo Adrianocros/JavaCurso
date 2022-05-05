@@ -6,6 +6,7 @@ import ProgramacaoFuncionalELambidas.Consumer.util.SalarioUpdate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Consumer;
 
 public class Program {
     public static void main(String[] args) {
@@ -18,9 +19,13 @@ public class Program {
         list.add(new Funcionario("Leticia", 23, "Santos",1350.0));
         list.add(new Funcionario("João", 31, "São Paulo",2500.0));
 
+        double factor = 1.1;
+
+        Consumer<Funcionario> consumer = f -> f.setSalario(f.getSalario() * factor);
+
 
         //Ira percorrer a lista e aplicar o update
-        list.forEach(Funcionario::NonstaticSalarioUpdate);
+        list.forEach(consumer);
 
 
         list.forEach(System.out :: println);
