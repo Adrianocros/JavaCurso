@@ -26,6 +26,12 @@ public class Cliente {
         this.idade = idade;
     }
 
+    public static String staticUpCaseName(Cliente p){
+        return p.getNome().toUpperCase();
+
+    }
+
+
     @Override
     public String toString() {
         return "Program{" +
