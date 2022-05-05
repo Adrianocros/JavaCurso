@@ -20,7 +20,7 @@ public class Program {
 
 
         //Ira percorrer a lista e aplicar o update
-        list.forEach(Funcionario::staticSalarioUpdate);
+        list.forEach(Funcionario::NonstaticSalarioUpdate);
 
 
         list.forEach(System.out :: println);

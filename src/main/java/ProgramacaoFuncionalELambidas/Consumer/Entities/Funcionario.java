@@ -45,8 +45,8 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public static void staticSalarioUpdate(Funcionario f){
-        f.setSalario(f.getSalario() * 1.1);
+    public  void NonstaticSalarioUpdate(){
+       salario = salario * 1.1;
     }
 
     @Override
